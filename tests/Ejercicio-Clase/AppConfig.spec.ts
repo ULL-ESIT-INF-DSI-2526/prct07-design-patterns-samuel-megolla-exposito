@@ -1,5 +1,5 @@
 import { describe, test, expect} from 'vitest';
-import { AppConfig } from '../../src/Ejercicio-Clase/AppConfig';
+import { AppConfig } from '../../src/Ejercicio-Clase/AppConfig.js';
 
 describe('AppConfig Tests', () => {
   
