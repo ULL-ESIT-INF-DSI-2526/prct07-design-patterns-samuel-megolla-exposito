@@ -1,0 +1,37 @@
+{
+  "name": "prct07-design-patterns-samuel-megolla-exposito",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "test": "vitest run",
+    "doc": "typedoc",
+    "coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-INF-DSI-2526/prct07-design-patterns-samuel-megolla-exposito.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-INF-DSI-2526/prct07-design-patterns-samuel-megolla-exposito/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-INF-DSI-2526/prct07-design-patterns-samuel-megolla-exposito#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@vitest/coverage-v8": "^4.1.0",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-tsdoc": "^0.5.2",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1",
+    "tsc-watch": "^7.2.0",
+    "typedoc": "^0.28.17",
+    "typescript-eslint": "^8.57.1",
+    "vitest": "^4.1.0"
+  }
+}
