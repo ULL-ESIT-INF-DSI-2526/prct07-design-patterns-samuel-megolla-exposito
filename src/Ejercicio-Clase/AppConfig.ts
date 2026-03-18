@@ -5,9 +5,7 @@
 export class AppConfig {
 
   private config: Record<string, string>;
-  private _lang: string;
-	private _theme: string;
-	private _apiUrl: string;
+
 
   private static instance: AppConfig;
 
@@ -15,35 +13,8 @@ export class AppConfig {
 	 * Constructor de la clase AppConfig, inicializa todo sin valor alguno
 	 */
   private constructor() {
-		this._lang = ""
-		this._theme = ""
-		this._apiUrl = ""
     this.config = {};
   }
-
-	/**
-	 * Getter de _lang
-	 * @returns _lang de la instancia
-	 */
-	public getLang(): string{
-		return this._lang;
-	}
-
-	/**
-	 * Getter de theme
-	 * @returns  _theme de la instancia
-	 */
-	public getTheme(): string{
-		return this._theme;
-	}
-
-	/**
-	 * Getter de apiUrl
-	 * @returns 
-	 */
-	public getApiUrl(): string{
-		return this._apiUrl
-	}
 
 	/**
 	 * Metodo encargado de devolver la instancia actual
@@ -102,14 +73,14 @@ export class AppConfig {
 	public loadProfile(profile: "development" | "production"): void{
 		switch (profile) {
 			case "development":
-				this._lang = "es"
-				this._theme = "dark";
-				this._apiUrl = "https://localhost3000"
+				this.set('lang' , 'es')
+				this.set('theme' , 'dark')
+				this.set('apiUrl' , 'https://localhost300' )
 				break;
 			case "production":
-				this._lang = "en"
-				this._theme = "ligth"
-				this._apiUrl = "https://api.miapp.com"
+				this.set('lang' , 'en')
+				this.set('theme' , 'ligth')
+				this.set('apiUrl' , 'https://api.miapp.com' )
 			default:
 				break;
 		}

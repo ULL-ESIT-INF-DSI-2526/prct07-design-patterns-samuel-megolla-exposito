@@ -24,9 +24,9 @@ describe('AppConfig Tests', () => {
     const config = AppConfig.getInstance();
     config.loadProfile('development');
     
-    expect(config.getLang()).toBe('es');
-    expect(config.getTheme()).toBe('dark');
-    expect(config.getApiUrl()).toBe('https://localhost3000')
+    expect(config.get('lang')).toBe('es');
+    expect(config.get('theme')).toBe('dark');
+    expect(config.get('apiUrl')).toBe('https://localhost300')
   });
 
 
@@ -34,9 +34,9 @@ describe('AppConfig Tests', () => {
     const config = AppConfig.getInstance();
     config.loadProfile('production');
     
-    expect(config.getLang()).toBe('en');
-    expect(config.getTheme()).toBe('ligth');
-    expect(config.getApiUrl()).toBe('https://api.miapp.com')
+    expect(config.get('lang')).toBe('en');
+    expect(config.get('theme')).toBe('ligth');
+    expect(config.get('apiUrl')).toBe('https://api.miapp.com')
   });
 
 
